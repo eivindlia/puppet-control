@@ -26,9 +26,9 @@ mod 'ntp',
   :ref => 'master'
 
 mod 'role',
-  :git => 'https://github.com/eivindlia/puppet-role.git',
+  :git => 'https://github.com/eivindlia/puppet-role.git'
   #:ref => 'master'
 
 mod 'profile',
-  :git => 'https://github.com/eivindlia/puppet-profile.git',
+  :git => 'https://github.com/eivindlia/puppet-profile.git'
   #:ref => 'master'
