@@ -39,4 +39,4 @@ mod 'profile',
 
 mod 'nginx',
   :git => 'git@github.com:eivindlia/puppet-nginx.git',
-  :ref => 'master',
+  :ref => 'master'
