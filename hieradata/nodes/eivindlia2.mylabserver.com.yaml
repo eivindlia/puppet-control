@@ -1,5 +1,5 @@
 ---
-profile::nginx::vhost:
+profile::nginx::vhosts:
  - 'fqdn': 'eivindlia2.mylabserver.com'
    'port': 80
    'server_aliases': ''
