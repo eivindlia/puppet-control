@@ -3,6 +3,6 @@ profile::nginx::vhosts:
  - 'fqdn': 'eivindlia2.mylabserver.com'
    'port': 80
    'server_aliases': ''
- - 'fqdn': 'eivindlia2b.mylabserver.com':
+ - 'fqdn': 'eivindlia2b.mylabserver.com'
    'port': 80
    'server_aliases': 'eivindlia2b1.mylabserver.com'
