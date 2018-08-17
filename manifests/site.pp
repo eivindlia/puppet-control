@@ -24,26 +24,25 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node 'eivindlia2.mylabserver.com' {
-  notify { 'test-message-for-eivindlia2' :
-    message => 'this is eivindlia2 using nodes definition'
-  }
+#node 'eivindlia2.mylabserver.com' {
+#  notify { 'test-message-for-eivindlia2' :
+#    message => 'this is eivindlia2 using nodes definition'
+#  }
+#}
 
-}
 
-
-node 'eivindlia4' {
-  notify { "This matches eivindlia4": }
-}
+#node 'eivindlia4' {
+#  notify { "This matches eivindlia4": }
+#}
 
 #node /^eivindlia4/ {
 #  notify { "This is is a node definition using regex!!!": }
 #}
 
-#node 'eivindlia1.mylabserver.com' {
-#  include pe_repo::platform::el_6_x86_64
-#  include pe_repo::platform::ubuntu_1204_amd64
-#}
+node 'eivindlia1.mylabserver.com' {
+  include pe_repo::platform::el_6_x86_64
+  include pe_repo::platform::ubuntu_1204_amd64
+}
 
 node default {
   hiera_include('classes')  
