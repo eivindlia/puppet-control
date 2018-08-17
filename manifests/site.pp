@@ -46,5 +46,6 @@ node 'eivindlia4' {
 #}
 
 node default {
-  #  class { 'my_class': }
+  hiera_include('classes')  
+#  class { 'my_class': }
 }
