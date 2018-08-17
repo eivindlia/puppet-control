@@ -24,6 +24,14 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
+node 'eivindlia2.mylabserver.com' {
+  notify { 'test-message-for-eivindlia2' :
+    message => 'this is eivindlia2 using nodes definition'
+  }
+
+}
+
+
 node 'eivindlia4' {
   notify { "This matches eivindlia4": }
 }
