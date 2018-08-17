@@ -24,11 +24,11 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node 'eivindlia3.mylabserver' {
+node 'eivindlia4.mylabserver' {
   notify { "This matches the node name": }
 }
 
-node /^eivindlia3/ {
+node /^eivindlia4/ {
   notify { "This is is a node definition using regex!!!": }
 }
 
