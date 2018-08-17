@@ -28,9 +28,9 @@ node 'eivindlia4.mylabserver' {
   notify { "This matches the node name": }
 }
 
-node /^eivindlia4/ {
-  notify { "This is is a node definition using regex!!!": }
-}
+#node /^eivindlia4/ {
+#  notify { "This is is a node definition using regex!!!": }
+#}
 
 #node 'eivindlia1.mylabserver.com' {
 #  include pe_repo::platform::el_6_x86_64
